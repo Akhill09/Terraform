@@ -16,6 +16,8 @@ We need to create multiple VMS that have similar hardware requirements, the same
 
 vars_multiple.yml file will contain list of VMs that will be created and parameters with specific values, which are different for each VM. For example, parameters that are specific for each VM are vm_name, vm_ip and vm_disk_gb, other parameters are the same for all VMs, but can be adjusted.
 
+
+ansible-playbook vm_create_multiple.yml --ask-vault-pass
 Finally,
 
 terraform apply
